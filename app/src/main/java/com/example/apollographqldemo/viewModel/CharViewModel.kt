@@ -18,7 +18,7 @@ class CharViewModel @Inject constructor(private val charRepository: CharReposito
     private val _charactersList by lazy { MutableLiveData<ViewState<Response<CharactersDataQuery.Data>>>() }
     val charactersList: LiveData<ViewState<Response<CharactersDataQuery.Data>>> =  _charactersList
 
-    fun queryCharactersList() = viewModelScope.launch {
+    fun getCharactersData() = viewModelScope.launch {
         _charactersList.postValue(ViewState.Loading())
         try {
             val response = charRepository.getCharList()
