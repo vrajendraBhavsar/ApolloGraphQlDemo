@@ -1,0 +1,10 @@
+query characterData($id :ID!) {
+    character(id :$id){
+        name
+        species
+        gender
+        origin {
+            name
+        }
+    }
+}
