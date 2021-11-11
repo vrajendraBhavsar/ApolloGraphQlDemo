@@ -1,6 +1,6 @@
 package com.example.retrofit_hilt.di
 
-import com.example.apollographqldemo.network.CharApiService
+import com.example.apollographqldemo.data.network.CharApiService
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn

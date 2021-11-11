@@ -1,4 +1,4 @@
-package com.example.apollographqldemo
+package com.example.apollographqldemo.ui.app
 
 import android.app.Application
 import dagger.hilt.android.HiltAndroidApp

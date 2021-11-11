@@ -1,0 +1,17 @@
+query SingleCharacterData($id :ID!) {
+    character(id :$id){
+        id
+        name
+        species
+        type
+        gender
+        origin {
+            name
+            dimension
+        }
+        location{
+            name
+            dimension
+        }
+    }
+}

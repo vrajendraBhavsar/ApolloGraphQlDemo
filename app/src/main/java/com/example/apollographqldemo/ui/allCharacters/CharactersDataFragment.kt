@@ -1,4 +1,4 @@
-package com.example.apollographqldemo.view
+package com.example.apollographqldemo.ui.allCharacters
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -8,14 +8,13 @@ import android.view.ViewGroup
 import androidx.fragment.app.viewModels
 import com.apollographql.apollo.api.Response
 import com.example.apollographqldemo.CharactersDataQuery
-import com.example.apollographqldemo.adapter.CharacterAdapter
+import com.example.apollographqldemo.ui.adapter.CharacterAdapter
 import com.example.apollographqldemo.databinding.FragmentCharactersListBinding
-import com.example.apollographqldemo.model.state.ViewState
-import com.example.apollographqldemo.viewModel.CharViewModel
+import com.example.apollographqldemo.data.model.state.ViewState
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
-class CharactersListFragment : Fragment() {
+class CharactersDataFragment : Fragment() {
     lateinit var binding : FragmentCharactersListBinding
     private val characterAdapter by lazy { CharacterAdapter() }
     private val viewModel by viewModels<CharViewModel>()

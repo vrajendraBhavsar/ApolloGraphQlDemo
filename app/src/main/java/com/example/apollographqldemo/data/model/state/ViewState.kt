@@ -1,4 +1,4 @@
-package com.example.apollographqldemo.model.state
+package com.example.apollographqldemo.data.model.state
 
 sealed class ViewState<T>(
     val value: T? = null,

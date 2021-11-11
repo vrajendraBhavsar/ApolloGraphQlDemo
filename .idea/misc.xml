@@ -3,8 +3,13 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="app/src/main/res/drawable/button_background_blue.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.253125" />
         <entry key="app/src/main/res/layout/fragment_characters_list.xml" value="0.253125" />
+        <entry key="app/src/main/res/layout/fragment_choose_option.xml" value="0.253125" />
+        <entry key="app/src/main/res/layout/fragment_enter_char_id.xml" value="0.253125" />
+        <entry key="app/src/main/res/layout/fragment_search.xml" value="0.253125" />
+        <entry key="app/src/main/res/layout/fragment_single_character.xml" value="0.253125" />
         <entry key="app/src/main/res/layout/item_character.xml" value="0.253125" />
       </map>
     </option>

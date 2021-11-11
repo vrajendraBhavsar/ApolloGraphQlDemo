@@ -1,4 +1,4 @@
-package com.example.apollographqldemo.network
+package com.example.apollographqldemo.data.network
 
 import android.os.Looper
 import com.apollographql.apollo.ApolloClient

@@ -1,4 +1,4 @@
-package com.example.apollographqldemo.adapter
+package com.example.apollographqldemo.ui.adapter
 
 import android.view.LayoutInflater
 import android.view.ViewGroup

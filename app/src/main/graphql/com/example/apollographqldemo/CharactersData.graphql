@@ -3,10 +3,7 @@ query CharactersData {
         results {
             id
             name
-            episode{
-                name
-                episode
-            }
+            species
         }
     }
 }
