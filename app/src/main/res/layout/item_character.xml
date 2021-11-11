@@ -6,7 +6,7 @@
     <data>
         <variable
             name="character"
-            type="com.example.apollographqldemo.CharactersDataQuery.Result" />
+            type="com.example.apollographqldemozz.CharactersDataQuery.Result" />
     </data>
 
     <androidx.cardview.widget.CardView
@@ -19,6 +19,36 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="8dp">
+
+           <androidx.constraintlayout.widget.ConstraintLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               app:layout_constraintEnd_toEndOf="parent"
+               app:layout_constraintTop_toTopOf="parent">
+
+               <androidx.cardview.widget.CardView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_centerInParent="true"
+                   android:innerRadius="0dp"
+                   android:layout_margin="@dimen/view_5dp"
+                   android:shape="ring"
+                   app:cardCornerRadius="75dp"
+                   app:layout_constraintBottom_toBottomOf="parent"
+                   app:layout_constraintEnd_toEndOf="parent"
+                   app:layout_constraintStart_toStartOf="parent"
+                   app:layout_constraintTop_toTopOf="parent">
+
+                   <androidx.appcompat.widget.AppCompatImageView
+                       android:layout_width="10dp"
+                       android:layout_height="10dp"
+                       android:layout_gravity="center"
+                       android:background="@color/yellow"
+                       android:backgroundTint="@{character.status.equalsIgnoreCase(`Alive`) ? @color/green : @color/rich_red }"
+                       />
+               </androidx.cardview.widget.CardView>
+
+           </androidx.constraintlayout.widget.ConstraintLayout>
 
             <TextView
                 android:id="@+id/tvCharacterId"
@@ -42,7 +72,7 @@
                 android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="@+id/tvCharacterId"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/tvCharacterId"
+                app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="@+id/tvCharacterId"
                 tools:text="Name: Rick Sanchez" />
 
@@ -51,13 +81,86 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
-                android:text="@{character.species}"
+                android:text="@{`Species: ` + character.species}"
                 android:textSize="18sp"
                 android:textStyle="normal"
+                app:layout_constraintStart_toEndOf="@+id/tvCharacterId"
+                app:layout_constraintTop_toBottomOf="@id/tvCharacterName"
+                tools:text="species: alien" />
+
+            <TextView
+                android:id="@+id/tvGender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_marginStart="@dimen/view_10dp"
+                android:text="@{`gender: ` + character.gender}"
+                android:textSize="18sp"
+                android:textStyle="normal"
+                app:layout_constraintBottom_toBottomOf="@id/tvSpecies"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/tvSpecies"
+                app:layout_constraintTop_toTopOf="@id/tvSpecies"
+                tools:text="gender: male" />
+
+            <LinearLayout
+                android:id="@+id/llDivider"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/view_20dp"
+                android:gravity="center"
+                android:weightSum="12"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/tvCharacterName"
-                tools:text="alien" />
+                app:layout_constraintTop_toBottomOf="@+id/tvSpecies">
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="3"
+                    android:background="@color/colorPrimaryDark" />
+
+                <TextView
+                    style="@style/viewParent.headerText.NoMode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:text="Character Origin"
+                    android:textAlignment="center"
+                    android:textSize="12sp" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="3"
+                    android:background="@color/colorPrimaryDark" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvOriginName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_marginStart="@dimen/view_10dp"
+                android:text="@{`Name: ` + character.origin.name}"
+                android:textSize="15sp"
+                android:textStyle="normal"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/llDivider"
+                tools:text="origin: Earth (C-137)" />
+
+            <TextView
+                android:id="@+id/tvOriginDimension"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_marginStart="@dimen/view_10dp"
+                android:text="@{`Dimension: ` + character.origin.dimension}"
+                android:textSize="15sp"
+                android:textStyle="normal"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvOriginName"
+                tools:text="dimension: Dimension C-137" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>

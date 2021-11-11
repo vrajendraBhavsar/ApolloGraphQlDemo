@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.singleCharacter.SingleCharacterFragment">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottie_graphql"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_gravity="center_horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/graphql" />
+
+    <LinearLayout
+        android:id="@+id/llDivider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/view_20dp"
+        android:gravity="center"
+        android:weightSum="12"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lottie_graphql">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="3"
+            android:background="@color/colorPrimaryDark" />
+
+        <TextView
+            style="@style/viewParent.headerText.NoMode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:text="Options"
+            android:textAlignment="center"
+            android:textSize="12sp" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="3"
+            android:background="@color/colorPrimaryDark" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnIndividual"
+        android:layout_width="200dp"
+        android:layout_height="@dimen/view_50dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="70dp"
+        android:backgroundTint="@color/rich_red"
+        android:text="Individual"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/llDivider" />
+
+    <Button
+        android:id="@+id/btnAllCharList"
+        android:layout_width="200dp"
+        android:layout_height="@dimen/view_50dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@color/rich_red"
+        android:text="All Characters"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnIndividual" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
