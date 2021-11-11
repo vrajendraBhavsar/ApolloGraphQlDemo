@@ -3,7 +3,13 @@ query CharactersData {
         results {
             id
             name
+            status
             species
+            gender
+            origin{
+                name
+                dimension
+            }
         }
     }
 }

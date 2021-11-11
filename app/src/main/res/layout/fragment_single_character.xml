@@ -6,7 +6,7 @@
     <data>
         <variable
             name="singleCharacter"
-            type="com.example.apollographqldemo.SingleCharacterDataQuery.Character" />
+            type="com.example.apollographqldemozz.SingleCharacterDataQuery.Character" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -21,9 +21,11 @@
             android:id="@+id/clChild1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:padding="@dimen/view_5dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
+            app:layout_constraintTop_toTopOf="parent"
+            android:clipToPadding="false">
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/cvPersonName"
@@ -224,7 +226,7 @@
                         android:id="@+id/tvLocationDimension"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_margin="8dp"
+                        android:layout_margin="10dp"
                         android:text="@{singleCharacter.location.dimension}"
                         android:textSize="18sp"
                         android:textStyle="normal"
@@ -240,9 +242,9 @@
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/clChild2"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/view_5dp"
+            android:layout_marginTop="@dimen/view_15dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@id/clChild1">
@@ -252,12 +254,12 @@
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:layout_gravity="center_horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/clChild2"
                 app:lottie_autoPlay="true"
                 app:lottie_loop="true"
-                app:lottie_rawRes="@raw/loading"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"/>
+                app:lottie_rawRes="@raw/loading" />
 
             <TextView
                 android:id="@+id/characters_empty_text"

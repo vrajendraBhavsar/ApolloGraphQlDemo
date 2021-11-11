@@ -6,7 +6,7 @@ import androidx.databinding.DataBindingUtil
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
-import com.example.apollographqldemo.CharactersDataQuery
+import com.example.apollographqldemozz.CharactersDataQuery
 import com.example.apollographqldemo.R
 import com.example.apollographqldemo.databinding.ItemCharacterBinding
 

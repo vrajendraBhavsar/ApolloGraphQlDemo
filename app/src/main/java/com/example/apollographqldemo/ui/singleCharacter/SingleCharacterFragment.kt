@@ -8,9 +8,9 @@ import android.view.ViewGroup
 import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.navArgs
 import com.apollographql.apollo.api.Response
-import com.example.apollographqldemo.CharactersDataQuery
+import com.example.apollographqldemozz.CharactersDataQuery
 import com.example.apollographqldemo.R
-import com.example.apollographqldemo.SingleCharacterDataQuery
+import com.example.apollographqldemozz.SingleCharacterDataQuery
 import com.example.apollographqldemo.data.model.state.ViewState
 import com.example.apollographqldemo.databinding.FragmentSingleCharacterBinding
 import com.example.apollographqldemo.ui.allCharacters.CharViewModel

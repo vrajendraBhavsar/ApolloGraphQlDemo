@@ -26,5 +26,7 @@
     <color name="light_blue">#00ADC1</color>
     <color name="icy_white">#FDFEFF</color>
     <color name="rich_red">#E11218</color>
+    <color name="yellow">#FF9800</color>
+    <color name="green">#44BD49</color>
     <color name="action_bar_red">#EC1D23</color>
 </resources>

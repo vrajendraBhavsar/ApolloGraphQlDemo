@@ -7,21 +7,21 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.viewModels
 import com.apollographql.apollo.api.Response
-import com.example.apollographqldemo.CharactersDataQuery
+import com.example.apollographqldemozz.CharactersDataQuery
 import com.example.apollographqldemo.ui.adapter.CharacterAdapter
-import com.example.apollographqldemo.databinding.FragmentCharactersListBinding
+import com.example.apollographqldemo.databinding.FragmentCharactersDataBinding
 import com.example.apollographqldemo.data.model.state.ViewState
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
 class CharactersDataFragment : Fragment() {
-    lateinit var binding : FragmentCharactersListBinding
+    lateinit var binding : FragmentCharactersDataBinding
     private val characterAdapter by lazy { CharacterAdapter() }
     private val viewModel by viewModels<CharViewModel>()
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         // Inflate the layout for this fragment
-        binding = FragmentCharactersListBinding.inflate(inflater)
+        binding = FragmentCharactersDataBinding.inflate(inflater)
         return binding.root
     }
 

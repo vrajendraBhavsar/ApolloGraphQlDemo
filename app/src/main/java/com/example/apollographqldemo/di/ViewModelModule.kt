@@ -19,5 +19,5 @@ abstract class ViewModelModule {
 
     @Binds
     @ViewModelScoped
-    abstract fun bindSingleCharacterRepository(singleCharacterRepositoryImpl: SingleCharacterRepositoryImpl): SingleCharacterRepository
+    abstract fun bindSingleCharacterRepository(singleCharRepositoryImpl: SingleCharacterRepositoryImpl): SingleCharacterRepository
 }

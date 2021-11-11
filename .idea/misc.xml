@@ -9,8 +9,8 @@
         <entry key="app/src/main/res/layout/fragment_choose_option.xml" value="0.253125" />
         <entry key="app/src/main/res/layout/fragment_enter_char_id.xml" value="0.253125" />
         <entry key="app/src/main/res/layout/fragment_search.xml" value="0.253125" />
-        <entry key="app/src/main/res/layout/fragment_single_character.xml" value="0.253125" />
-        <entry key="app/src/main/res/layout/item_character.xml" value="0.253125" />
+        <entry key="app/src/main/res/layout/fragment_single_character.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/item_character.xml" value="0.25" />
       </map>
     </option>
   </component>

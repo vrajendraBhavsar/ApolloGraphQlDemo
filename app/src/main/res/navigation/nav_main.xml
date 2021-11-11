@@ -6,10 +6,10 @@
     app:startDestination="@id/chooseOptionFragment">
 
     <fragment
-        android:id="@+id/charactersListFragment"
+        android:id="@+id/charactersDataFragment"
         android:name="com.example.apollographqldemo.ui.allCharacters.CharactersDataFragment"
         android:label="Characters list"
-        tools:layout="@layout/fragment_characters_list" />
+        tools:layout="@layout/fragment_characters_data" />
     <fragment
         android:id="@+id/singleCharacterFragment"
         android:name="com.example.apollographqldemo.ui.singleCharacter.SingleCharacterFragment"
@@ -29,7 +29,7 @@
             app:destination="@id/searchFragment" />
         <action
             android:id="@+id/action_chooseOptionFragment_to_charactersListFragment"
-            app:destination="@id/charactersListFragment" />
+            app:destination="@id/charactersDataFragment" />
     </fragment>
     <fragment
         android:id="@+id/searchFragment"

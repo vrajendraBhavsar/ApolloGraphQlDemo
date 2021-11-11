@@ -6,7 +6,7 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.apollographql.apollo.api.Response
 import com.apollographql.apollo.exception.ApolloException
-import com.example.apollographqldemo.CharactersDataQuery
+import com.example.apollographqldemozz.CharactersDataQuery
 import com.example.apollographqldemo.data.model.state.ViewState
 import com.example.apollographqldemo.domain.allCharacters.CharactersRepository
 import dagger.hilt.android.lifecycle.HiltViewModel
